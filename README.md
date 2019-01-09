@@ -1,3 +1,3 @@
-# Robokassa Pay
+# Robokassa API
 
 Гем для работы с API Robokassa
