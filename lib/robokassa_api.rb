@@ -4,7 +4,7 @@ module RobokassaApi
   extend self
 
   def create_pay_url(signature, user, out_sum)
-    RobokassaApi::PaymentUrl.create_pay_url(signature, user, out_sum)
+    RobokassaApi::PaymentUrl.create_pay_url(signature, user, out_sum, description)
   end
 
   def create_signature(args)

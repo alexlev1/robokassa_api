@@ -1,7 +1,7 @@
 require 'digest/md5'
 
 module RobokassaApi
-  class SignatureGenerator
+  module SignatureGenerator
     include Data
 
     def self.create_signature(args)
