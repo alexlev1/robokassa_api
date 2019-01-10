@@ -11,8 +11,16 @@ class PaymentsController < ApplicationController
       user: user
     })
 
-    # Сравниваем подписи (свою и чужую)
     @result = RobokassaApi.check_signatures(signature1, signature2, invoice_id)
+
+    if @result
+      # В случае успешного сравнения подписей, сюда можно передать блок кода:
+      # - Создание заказа в базе
+      # - Оплата доступа
+      # - и т.д.
+    end
+
+    @result
   end
 
   def success

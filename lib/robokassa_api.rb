@@ -15,7 +15,7 @@ module RobokassaApi
     if signature_valid?(signature1, signature2)
       "OK#{invoice_id}"
     else
-      "bad sign"
+      false
     end
   end
 
