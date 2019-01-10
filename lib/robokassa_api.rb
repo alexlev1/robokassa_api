@@ -1,4 +1,4 @@
-require 'robokassa_api/payment'
+require 'robokassa_api/payment_url'
 
 module RobokassaApi
   extend self
