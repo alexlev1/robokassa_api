@@ -1,6 +1,8 @@
+require 'robokassa_data'
+
 module RobokassaApi
-  module PaymentUrl
-    include RobokassaApi::Data
+  class PaymentUrl
+    include RobokassaData
 
     URL = 'https://auth.robokassa.ru/Merchant/Index.aspx?'
 

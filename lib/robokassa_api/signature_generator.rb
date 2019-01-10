@@ -1,8 +1,9 @@
+require 'robokassa_data'
 require 'digest/md5'
 
 module RobokassaApi
-  module SignatureGenerator
-    include Data
+  class SignatureGenerator
+    include RobokassaData
 
     def self.create_signature(args)
       if args.include?(:invoice_id)
