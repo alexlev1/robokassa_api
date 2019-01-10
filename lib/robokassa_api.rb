@@ -1,4 +1,5 @@
 require 'robokassa_api/payment_url'
+require 'robokassa_api/signature_generator'
 
 module RobokassaApi
   extend self

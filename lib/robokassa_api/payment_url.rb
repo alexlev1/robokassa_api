@@ -1,6 +1,6 @@
 module RobokassaApi
   module PaymentUrl
-    include SignatureGenerator
+    include RobokassaApi::Data
 
     URL = 'https://auth.robokassa.ru/Merchant/Index.aspx?'
 
