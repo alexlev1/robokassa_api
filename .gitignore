@@ -1,8 +1,10 @@
 *.gem
 *.rbc
-.bundle
 .config
 .yardoc
+.bundle/
+log/*.log
+pkg/
 usage.rb
 Gemfile.lock
 InstalledFiles
@@ -10,7 +12,6 @@ _yardoc
 coverage
 doc/
 lib/bundler/man
-pkg
 rdoc
 spec/reports
 test/tmp

@@ -1,3 +1,4 @@
+require "robokassa_api/engine"
 require 'robokassa_api/payment_url'
 require 'robokassa_api/signature_generator'
 
@@ -23,6 +24,6 @@ module RobokassaApi
   private
 
   def signature_valid?(signature1, signature2)
-    (!signature_1.blank?) && (signature_1 == signature_2)
+    (signature_1.present?) && (signature_1 == signature_2)
   end
 end

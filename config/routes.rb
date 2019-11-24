@@ -1,4 +1,4 @@
-Rails.application.routes.draw do
+RobokassaApi::Engine.routes.draw do
   scope 'payments' do
     post 'result',  to: 'payments#result' # to handle Robokassa push request
     get  'success', to: 'payments#success' # to handle Robokassa success redirect
